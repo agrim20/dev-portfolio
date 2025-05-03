@@ -1,24 +1,37 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="w-full px-6 py-4 bg-white shadow">
+    <header className="w-full bg-white shadow-sm sticky top-0 z-50 px-6 py-4">
       <nav className="max-w-5xl mx-auto flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
+        {/* Logo / Name */}
         <Link href="/" className="text-xl font-bold text-blue-600">
           Agrim Mehra
-          <span className="block text-sm font-normal text-gray-500 sm:inline sm:ml-2">
+          <span className="hidden sm:inline text-sm font-normal text-gray-500 ml-2">
             • Software Engineer
           </span>
         </Link>
 
-        <div className="flex justify-center gap-6 text-base text-gray-700">
-          <Link href="/" className="hover:text-blue-600">
+        {/* Nav Links */}
+        <div className="flex flex-wrap justify-center sm:justify-end gap-6 text-gray-700 text-sm sm:text-base font-medium">
+          <Link
+            href="/"
+            className="hover:text-blue-600 hover:underline underline-offset-4 transition"
+          >
             Home
           </Link>
-          <Link href="/projects" className="hover:text-blue-600">
+          <Link
+            href="/projects"
+            className="hover:text-blue-600 hover:underline underline-offset-4 transition"
+          >
             Projects
           </Link>
-          <Link href="/#contact" className="hover:text-blue-600">
+          <Link
+            href="/#contact"
+            className="hover:text-blue-600 hover:underline underline-offset-4 transition"
+          >
             Contact
           </Link>
         </div>
