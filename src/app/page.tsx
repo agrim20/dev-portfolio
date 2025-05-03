@@ -16,7 +16,7 @@ export default function HomePage() {
           className="flex justify-center md:justify-start"
         >
           <Image
-            src="/profile.jpeg"
+            src="/profile.jpg"
             alt="Agrim Mehra"
             width={220}
             height={220}
