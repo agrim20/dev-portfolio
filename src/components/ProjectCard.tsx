@@ -45,7 +45,7 @@ export default function ProjectCard({
           target="_blank"
           className="inline-block text-sm text-blue-600 hover:underline"
         >
-          View Project →
+          View Publication →
         </a>
       )}
     </motion.div>
