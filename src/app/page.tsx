@@ -60,12 +60,44 @@ export default function HomePage() {
       </div>
 
       {/* About Me Section */}
-      <div className="max-w-3xl mx-auto text-center mt-16">
-        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          I’m an experienced software developer based in Belgium...
-        </p>
-      </div>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-24 items-center">
+          {/* Text */}
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              I’m a software developer with 2.5 years of experience building
+              React + TypeScript interfaces that scale and last. I&apos;ve
+              contributed to performance-heavy engineering tools at Hysopt, led
+              TypeScript migration efforts, and recently built a cloud-native
+              ingestion pipeline using AWS and FastAPI.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              I hold a Master’s in Computer Science from KU Leuven. I enjoy
+              turning complex ideas into intuitive interfaces and collaborating
+              with cross-functional teams to deliver meaningful features.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Outside of work, I’m usually chasing down a padel ball, exploring
+              new cities, or reading about the world affairs. I believe the best
+              code comes from a balance of curiosity, clarity, and occasional
+              chaos.
+            </p>
+          </div>
+
+          {/* Image or Personal Photo */}
+          <div className="flex justify-center md:justify-start">
+            <Image
+              src="/agrim_egypt.jpeg"
+              alt="Agrim playing padel or traveling"
+              width={300}
+              height={300}
+              className="rounded-lg shadow-lg object-cover"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Contact Section - ⬇️ Add this at the bottom */}
       <div id="contact" className="mt-24 max-w-xl mx-auto text-center">
