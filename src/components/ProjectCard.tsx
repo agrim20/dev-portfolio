@@ -12,9 +12,11 @@ export default function ProjectCard({
   link,
 }: ProjectCardProps) {
   return (
-    <div className="border border-gray-200 p-6 rounded-lg shadow-sm hover:shadow-md transition">
-      <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-      <p className="text-gray-700 mb-4">{description}</p>
+    <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition max-w-full">
+      <h3 className="text-2xl font-semibold text-gray-900 mb-2">{title}</h3>
+      <p className="text-gray-700 mb-4 text-base leading-relaxed">
+        {description}
+      </p>
 
       <div className="flex flex-wrap gap-2 mb-4">
         {tech.map((item, index) => (
@@ -31,7 +33,7 @@ export default function ProjectCard({
         <a
           href={link}
           target="_blank"
-          className="text-blue-600 hover:underline text-sm"
+          className="inline-block text-sm text-blue-600 hover:underline"
         >
           View Project →
         </a>
