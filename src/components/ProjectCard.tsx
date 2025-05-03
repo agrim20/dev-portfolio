@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -12,7 +16,13 @@ export default function ProjectCard({
   link,
 }: ProjectCardProps) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition max-w-full">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4 }}
+      className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition max-w-full"
+    >
       <h3 className="text-2xl font-semibold text-gray-900 mb-2">{title}</h3>
       <p className="text-gray-700 mb-4 text-base leading-relaxed">
         {description}
@@ -38,6 +48,6 @@ export default function ProjectCard({
           View Project →
         </a>
       )}
-    </div>
+    </motion.div>
   );
 }
