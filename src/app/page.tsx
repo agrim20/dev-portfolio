@@ -90,9 +90,9 @@ export default function HomePage() {
           <div className="flex justify-center md:justify-start">
             <Image
               src="/agrim_egypt.jpeg"
-              alt="Agrim playing padel or traveling"
-              width={300}
-              height={300}
+              alt="Agrim traveling"
+              width={350}
+              height={350}
               className="rounded-lg shadow-lg object-cover"
             />
           </div>

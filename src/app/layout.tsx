@@ -5,8 +5,9 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata = {
-  title: "Your Name | Front-End Developer",
-  description: "Portfolio of a React + TypeScript developer based in Belgium.",
+  title: "Agrim Mehra | Software Developer",
+  description:
+    "Portfolio of a Software developer looking for new opportunities.",
 };
 
 export default function RootLayout({
