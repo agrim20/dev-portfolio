@@ -63,38 +63,73 @@ export default function HomePage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-24 items-center">
-          {/* Text */}
+          {/* Text Block */}
           <div className="text-center md:text-left">
             <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               I’m a software developer with 2.5 years of experience building
-              React + TypeScript interfaces that scale and last. I&apos;ve
-              contributed to performance-heavy engineering tools at Hysopt, led
-              TypeScript migration efforts, and recently built a cloud-native
-              ingestion pipeline using AWS and FastAPI.
+              React + TypeScript interfaces that scale and last. I’ve
+              contributed to production-grade tools at Hysopt, led a large-scale
+              TypeScript migration, and recently built a real-time cloud
+              pipeline with AWS and FastAPI.
             </p>
+
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              I hold a Master’s in Computer Science from KU Leuven. I enjoy
-              turning complex ideas into intuitive interfaces and collaborating
-              with cross-functional teams to deliver meaningful features.
+              I hold a Master’s in Computer Science from KU Leuven and have a
+              peer-reviewed publication in AI-based path planning. Outside of
+              work, you’ll usually find me chasing a padel ball, exploring new
+              cities, or sketching ideas over coffee.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Outside of work, I’m usually chasing down a padel ball, exploring
-              new cities, or reading about the world affairs. I believe the best
-              code comes from a balance of curiosity, clarity, and occasional
-              chaos.
-            </p>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-lg shadow-sm p-5 mb-6">
+              <h3 className="text-sm text-blue-700 font-semibold uppercase mb-2">
+                Engineering Product Experience
+              </h3>
+              <p className="text-gray-800 text-base">
+                I worked in an agile Scrum team developing engineering tools
+                grounded in applied physics and mathematics — including
+                performance-critical UI for simulations, dynamic charts, and
+                real-time visualizations in collaboration with functional
+                stakeholders.
+              </p>
+            </div>
           </div>
 
-          {/* Image or Personal Photo */}
-          <div className="flex justify-center md:justify-start">
-            <Image
-              src="/agrim_egypt.jpeg"
-              alt="Agrim traveling"
-              width={350}
-              height={350}
-              className="rounded-lg shadow-lg object-cover"
-            />
+          {/* Image Block */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="relative w-full h-72">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                className="relative w-full h-72"
+              >
+                <Image
+                  src="/agrim_egypt.jpeg"
+                  alt="Agrim traveling in Egypt"
+                  fill
+                  className="rounded-lg shadow object-cover"
+                />
+              </motion.div>
+            </div>
+            <div className="relative w-full h-72">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                className="relative w-full h-72"
+              >
+                <Image
+                  src="/agrim_react.jpg"
+                  alt="Agrim at React Brussels"
+                  fill
+                  className="rounded-lg shadow object-cover"
+                />
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

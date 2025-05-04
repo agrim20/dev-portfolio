@@ -33,9 +33,20 @@ export default function ProjectsPage() {
             tech={["JavaScript", "TypeScript", "Redux"]}
           />
           <ProjectCard
+            title="Chart representation Migration to Highcharts"
+            description="Replaced low-level custom charting logic with Highcharts in a production app, improving performance, accessibility, and development speed."
+            tech={["React", "TypeScript", "Highcharts", "Redux"]}
+          />
+          <ProjectCard
             title="Canvas Optimization using offScreen Canvas"
             description="Enhanced HTML5 canvas rendering performance with offScreenCanvas, improving drawing performance in simulation tools."
             tech={["HTML5 Canvas", "Performance", "POC"]}
+          />
+
+          <ProjectCard
+            title="Personal Portfolio (Next.js + Tailwind)"
+            description="Designed and built this portfolio using Next.js App Router, Tailwind CSS, and Framer Motion — outside of my usual tech stack to explore modern React tooling."
+            tech={["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]}
           />
 
           <ProjectCard
