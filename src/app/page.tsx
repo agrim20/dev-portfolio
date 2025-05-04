@@ -42,8 +42,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row sm:justify-start justify-center items-center gap-4">
             <a
-              href="/Agrim_resume.pdf"
-              target="_blank"
+              href="/resume"
               className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition text-sm"
             >
               View Resume
